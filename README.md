@@ -38,6 +38,24 @@ Esta é uma aplicação desenvolvida para facilitar a transição entre as redes
    - Certifique-se de ter Python instalado.
    - Baixe o código desta aplicação e descompacte-o no seu computador.
 
+1.1. **Se não tiver python instalado na sua máquina:**
+   Execute o seguinte comando no terminal para instalar o python:
+
+   Linux:
+   ```bash
+   sudo apt-get install python3-tk
+   ```
+
+  Windows (Abra o terminal como Administrador):
+   ```bash
+   Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.WebClient]::new().DownloadString('https://community.chocolatey.org/install.ps1') | Invoke-Expression
+   choco --version
+   choco install python -y
+   python --version
+   pip --version
+   ```
+
+
 2. **Instalação de dependências:**
    Execute o seguinte comando no terminal para instalar as dependências necessárias:
    ```bash
