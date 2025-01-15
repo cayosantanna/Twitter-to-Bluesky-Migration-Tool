@@ -17,11 +17,13 @@ Esta é uma aplicação desenvolvida para facilitar a transição entre as redes
 
 ## 🛠️ Requisitos
 
+
 ### Requisitos do Bluesky
 - Gere uma chave de aplicativos:
   - Acesse as configurações do Bluesky.
   - Navegue até "Privacidade e Segurança".
   - Crie uma chave de aplicativos.
+
 
 ### Requisitos do Twitter
 - Solicite os seus dados no Twitter:
@@ -30,6 +32,7 @@ Esta é uma aplicação desenvolvida para facilitar a transição entre as redes
   3. Verifique seu e-mail e baixe o arquivo dentro do prazo informado.
   4. Extraia o conteúdo do arquivo e localize o arquivo chamado `tweets.js`.
 
+
 ---
 
 ## 🚀 Instruções de Uso
@@ -37,14 +40,17 @@ Esta é uma aplicação desenvolvida para facilitar a transição entre as redes
 1. **Configurações iniciais:**
    - Certifique-se de ter Python instalado.
    - Baixe o código desta aplicação e descompacte-o no seu computador.
+     
 
 1.1. **Se não tiver python instalado na sua máquina:**
+
    Execute o seguinte comando no terminal para instalar o python:
 
    Linux:
    ```bash
    sudo apt-get install python3-tk
    ```
+
 
   Windows (Abra o terminal como Administrador):
    ```bash
@@ -61,6 +67,7 @@ Esta é uma aplicação desenvolvida para facilitar a transição entre as redes
    ```bash
    pip install -r requirements.txt
    ```
+   
 
 3. **Execução da interface gráfica:**
    - Abra sua IDE preferida (por exemplo, VSCode ou PyCharm) e execute o arquivo `bluesky_import_gui.py`.
@@ -68,6 +75,7 @@ Esta é uma aplicação desenvolvida para facilitar a transição entre as redes
      - Insira seu handle do Bluesky (ex.: `usuario.bsky.social`).
      - Insira sua chave de aplicações do Bluesky.
      - Cole o caminho do arquivo `tweets.js` (clique com o botão direito no arquivo e escolha a opção "Copiar como caminho").
+      
 
 4. **Execução em modo terminal (opcional):**
    - Caso prefira, você pode executar o script diretamente no terminal:
@@ -75,9 +83,11 @@ Esta é uma aplicação desenvolvida para facilitar a transição entre as redes
    python script.py
    ```
 
+
 ---
 
 ## 🧑‍💻 Detalhes técnicos
+
 
 ### Arquivo `bluesky_import_gui.py`
 - **Finalidade:** Fornece uma interface gráfica moderna e intuitiva para o processo de importação.
@@ -86,6 +96,7 @@ Esta é uma aplicação desenvolvida para facilitar a transição entre as redes
   - Barra de progresso para visualização em tempo real do status da importação.
   - Controle de interrupções e retomada automática.
 - **Tecnologias utilizadas:** Tkinter, threading para operações assíncronas.
+  
 
 ### Arquivo `script.py`
 - **Finalidade:** Implementa a lógica principal de autenticação, leitura de dados e postagem no Bluesky.
@@ -94,6 +105,7 @@ Esta é uma aplicação desenvolvida para facilitar a transição entre as redes
   - Verifica duplicidade de postagens para evitar redundância.
   - Ordena tweets cronologicamente para uma importação consistente.
   - Implementa rate limiting adaptativo para evitar bloqueios na API do Bluesky.
+    
 
 ### Sistema de backup e retomada
 - **Progresso salvo em arquivo:**
@@ -110,10 +122,12 @@ Este código é **opensource** e licenciado sob a [GNU General Public License v3
 2. Modificações ou redistribuições devem manter a mesma licença GPLv3, garantindo que o software e quaisquer derivações permaneçam livres.
 3. É obrigatório fornecer créditos ao autor original.
 4. Este software é fornecido "como está", sem garantias de qualquer tipo.
+   
 
 ### 🛡️ Considerações importantes
 - O código não coleta nenhum dado pessoal, nem do arquivo exportado do Twitter nem da sua conta no Bluesky. Todo o processamento é realizado localmente no seu computador.
 - O uso do código é de sua responsabilidade, e não nos responsabilizamos por eventuais bloqueios ou suspensões de contas devido às diretrizes de uso das redes sociais.
+  
 
 ---
 
